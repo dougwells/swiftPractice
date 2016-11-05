@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:loops.playground">
+   </FileRef>
+   <FileRef
+      location = "group:switchAndCase.playground">
+   </FileRef>
+   <FileRef
       location = "group:dictionary.playground">
    </FileRef>
    <FileRef
