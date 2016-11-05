@@ -2,6 +2,18 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:dictionary.playground">
+   </FileRef>
+   <FileRef
+      location = "group:set.playground">
+   </FileRef>
+   <FileRef
+      location = "group:array.playground">
+   </FileRef>
+   <FileRef
+      location = "group:strings.playground">
+   </FileRef>
+   <FileRef
       location = "group:conditionals.playground">
    </FileRef>
    <FileRef
