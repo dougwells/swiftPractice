@@ -2,6 +2,15 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:optionals-rob.playground">
+   </FileRef>
+   <FileRef
+      location = "group:classes.playground">
+   </FileRef>
+   <FileRef
+      location = "group:arraysAndDictionaries.playground">
+   </FileRef>
+   <FileRef
       location = "group:objects.playground">
    </FileRef>
    <FileRef
