@@ -31,4 +31,15 @@ if let bounds = minMax(arr: [-1,0,2,3]){
 
 print(minMax(arr: [-1,2,3]))
 
+//Calculate Area
+
+func calcArea(length:Int, width:Int) -> Int {
+    let area = length*width
+    return area
+}
+
+print(calcArea(length: 5, width: 4))
+
+
+
 
