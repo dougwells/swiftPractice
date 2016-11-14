@@ -37,9 +37,17 @@ func calcArea(length:Int, width:Int) -> Int {
     let area = length*width
     return area
 }
-
 print(calcArea(length: 5, width: 4))
 
+//change param from a constant to a variable
+    var beginBal = 500.00
+    var nikeShoes = 65.00
 
+func purchItem(bankBal: inout Double, purchPrice: Double) -> Double {
+bankBal = bankBal - purchPrice
+    return bankBal
+}
+
+purchItem(bankBal: &beginBal, purchPrice: nikeShoes)
 
 
