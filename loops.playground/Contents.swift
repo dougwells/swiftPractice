@@ -10,6 +10,30 @@ for name in names {
     print(name)
 }
 
+// for in example with index and value
+var salaries = [25000.0, 35000.0, 45000.0, 45000.0, 45000.0, 45000.0, 55,000.0 ]
+
+for (index, value) in salaries.enumerated() {
+    salaries[index] = value * 1.1
+}
+print(salaries)
+
+// continued.  For in w/index & value.  Repeat While loops
+print("Repeat - While")
+var x = 0
+repeat {
+    salaries[x] *= 1.1
+    print(salaries[x])
+    x+=1
+} while (x<salaries.count)
+
+//same as
+print("for in ...")
+for i in 0..<salaries.count {
+    salaries[i] *= 1.1
+    print(salaries[i])
+}
+
 for _ in 1...5 {
     print("Needed to print this 5 times")
 }
