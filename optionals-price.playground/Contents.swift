@@ -33,3 +33,44 @@ if let carArr = cars, carArr.count > 0 {
     print("Either nil or carArr is an empty array")
 }
 
+//Implicitly unwraped option
+//var age: int!  - ! gets rid of Swift warnings (BE CAREFUL)
+//Mark suggests setting value to zero instead, var age = 0
+
+class Person {
+    var age: Int!
+    func addAge(ageParam:Int){
+        self.age = ageParam
+    }
+}
+var jack = Person()
+jack.addAge(ageParam: 21)
+print(jack.age)
+
+//Another solution is to use a "getter" or "computed value"
+//Called a "getter" as it gets the value for a variable
+// _age - just another variable name.  Nothing special w/_
+
+class Dog {
+    private var _age:Int!   //private means only Dog can access it
+    var age: Int {          //strategy works w/o "private" as well
+        if _age == nil {
+            _age = 8
+        }
+        return _age
+    }
+}
+
+var crystal = Dog()
+print(crystal.age)
+//print(crystal._age)    error: _age is private (only Dog can access)
+
+// Using neither a ? or !
+class Cat {
+    var species: String
+    init(someSpecies: String) {
+        self.species = someSpecies
+    }
+}
+var mrsWhiskers = Cat(someSpecies: "Persian")
+print(mrsWhiskers.species)
