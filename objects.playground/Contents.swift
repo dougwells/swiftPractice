@@ -2,6 +2,7 @@
     - Classes: Blueprints for creating objects
 */
 
+//Rob Percival
 class FastCar {
 //      var topSpeed: Int = 155
         var topSpeed: Int
@@ -40,4 +41,50 @@ class miniVan: FamilyCar {
 }
 let myMiniVan = miniVan()
 print(myMiniVan.numWheels)
+
+//Mark Price Lecture on Objects
+
+class Vehicle {
+    var tires = 4
+    var headLights = 2
+    var horsePower = 450
+    var model = ""
+    
+    func accelerate() {
+        print("Zoom!")
+    }
+    
+    func brake() {
+        //code
+    }
+    func printModel(){
+        print(model)
+    }
+}
+
+let dougCar = Vehicle()
+dougCar.accelerate()
+
+//Inheritance.  Creating a class from a class
+//Inherits parent's properties and methods
+//Can override a method or property if desired
+
+class ElectricCar: Vehicle {
+    override func accelerate() {
+        print("We're Off !!!")
+    }
+}
+
+//Once you instantiate a class, it is an object
+//Class is a blueprint for instantiating objects
+
+var myTesla = ElectricCar()
+myTesla.accelerate()
+myTesla.model = "Model 3"
+print(myTesla.model)
+
+var myBMW = Vehicle()
+myBMW.model = "325 Xi"
+myBMW.printModel()
+
 
