@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:polymorphism.playground">
+   </FileRef>
+   <FileRef
+      location = "group:inheritance.playground">
+   </FileRef>
+   <FileRef
       location = "group:optionals-price.playground">
    </FileRef>
    <FileRef
