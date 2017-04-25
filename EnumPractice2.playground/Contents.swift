@@ -1,6 +1,8 @@
 // Enum practice
 // Good review at https://www.makeschool.com/online-courses/tutorials/learn-swift-by-example-part-2-enums
 
+import UIKit
+
 //Raw value is automatically set ONLY FOR Integers
 
 enum RacerMedal: Int {
@@ -59,5 +61,40 @@ case let .Error(message):
     print(message)
 }
 
-// Simple rolling a dice example. If roll 6, must roll again
+// Simple rolling a dice example. If not 6, must roll again
+
+enum Player {
+    case Waiting
+    case Done(Int)
+    init() {
+        self = .Waiting
+    }
+    mutating func rollDice(){
+        let diceResult = Int(arc4random_uniform(6)+1)
+        if diceResult == 6 {
+            self = .Done(diceResult)
+            print("Done. Dice = \(diceResult)")
+        } else {
+            print("Roll again. Dice = \(diceResult)")
+        }
+    }
+}
+
+
+var player1 = Player()
+var done = false
+
+repeat {
+    switch player1 {
+    case .Waiting:
+        player1.rollDice()
+    case .Done:
+        done = true
+    }
+    
+} while (!done)
+
+
+
+
 
