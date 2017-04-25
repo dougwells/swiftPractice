@@ -13,7 +13,14 @@ print(RacerMedal.Gold.rawValue)
 print(RacerMedal.Silver.rawValue)
 print(RacerMedal.Bronze.rawValue)
 
+//Raw values.  If not Integer, must set EACH
+enum CabinClass: String {
+    case First = "This is nice"
+    case Business = "90% of the fun, half the price!"
+    case Coach = "Getting there inexpensively is all that matters."
+}
 
+print(CabinClass.First.rawValue)
 
 
 
@@ -51,4 +58,6 @@ case let .Success(newBal):
 case let .Error(message):
     print(message)
 }
+
+// Simple rolling a dice example. If roll 6, must roll again
 
