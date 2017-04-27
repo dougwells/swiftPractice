@@ -1,5 +1,6 @@
 // Enum practice
 // Good review at https://www.makeschool.com/online-courses/tutorials/learn-swift-by-example-part-2-enums
+// Video on enums https://www.youtube.com/watch?v=ldpYprwcyJ0
 
 import UIKit
 
@@ -83,6 +84,7 @@ enum Player {
 
 var player1 = Player()
 var done = false
+
 
 repeat {
     switch player1 {
