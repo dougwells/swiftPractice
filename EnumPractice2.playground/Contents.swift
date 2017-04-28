@@ -2,6 +2,7 @@
 // Good review at https://www.makeschool.com/online-courses/tutorials/learn-swift-by-example-part-2-enums
 // Video on enums https://www.youtube.com/watch?v=ldpYprwcyJ0
 // Protocol talk. WWDC2015 'Crusty' Talk.  https://www.youtube.com/watch?v=g2LwFZatfTI
+//Apple says to use Structs and Enums where possible as they are value typed and thus less error prone than classes which is reference typed.
 
 import UIKit
 
